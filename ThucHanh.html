@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuc Hanh Chuyen Doi Nhiet Do</title>
+</head>
+<body>
+<h1>Temperature Converter</h1>
+<label>Fahrenheit</label>
+<input type="number" placeholder="Fahrenheit" id="inputF" oninput="temperatureCoverter(this.value)" onchange="temperatureCoverter(this.value)">
+<span id="result"></span>
+<script>
+function temperatureCoverter(valNumber) {
+    valNumber=parseFloat(valNumber);
+    document.getElementById("result").innerHTML=(valNumber-32)/1.8;
+}
+</script>
+</body>
+</html>
